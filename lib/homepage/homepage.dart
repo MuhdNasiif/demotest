@@ -198,44 +198,46 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-            const Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ProfileGrid(),
-                ProfileGrid(),
-                ProfileGrid(),
-              ],
-            ),
-            5.hBox,
-             const Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ProfileGrid(),
-                ProfileGrid(),
-                ProfileGrid(),
-              ],
-            ),
-            5.hBox,
-             const Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ProfileGrid(),
-                ProfileGrid(),
-                ProfileGrid(),
-              ],
-            ),
-            10.hBox,
-            // GridView.builder(
-            //     scrollDirection: Axis.vertical,git commit -m "first commit"
-            //     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            //       crossAxisCount: 3,
-            //       crossAxisSpacing: 8,
-            //       mainAxisSpacing: 8,
-            //     ),
-            //     itemCount: 12,
-            //     itemBuilder: (context, index) => ProfileGrid()
+        //     const Row(
+        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //       children: [
+        //         ProfileGrid(),
+        //         ProfileGrid(),
+        //         ProfileGrid(),
+        //       ],
+        //     ),
+            // 5.hBox,
+        //      const Row(
+        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //       children: [
+        //         ProfileGrid(),
+        //         ProfileGrid(),
+        //         ProfileGrid(),
+        //       ],
+        //     ),
+            // 5.hBox,
+        //      const Row(
+        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //       children: [
+        //         ProfileGrid(),
+        //         ProfileGrid(),
+        //         ProfileGrid(),
+        //       ],
+        //     ),
+            // 10.hBox,
+            GridView.builder(
+                // scrollDirection: Axis.vertical,
+                shrinkWrap: true,
+                physics: NeverScrollableScrollPhysics(),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 3,
+                  crossAxisSpacing: 8,
+                  mainAxisSpacing: 8,
+                ),
+                itemCount: 12,
+                itemBuilder: (context, index) => ProfileGrid()
            
-            // )
+            )
           ],
         ),
       ),
