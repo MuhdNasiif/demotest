@@ -169,61 +169,63 @@ class HomePage extends StatelessWidget {
                     Divider(),
                     Row(children: [
                       Expanded(
-                          flex: 1,
-                          child: Center(
-                            child: AppText(
-                              'Photos',
-                              size: 12,
-                              weight: FontWeight.w600,
-                              color: Color.fromRGBO(167, 172, 208, 1),
-                            ),
-                          )),
+                        flex: 1,
+                        child: Center(
+                          child: AppText(
+                            'Photos',
+                            size: 12,
+                            weight: FontWeight.w600,
+                            color: Color.fromRGBO(167, 172, 208, 1),
+                          ),
+                        ),
+                      ),
                       SizedBox(
                         height: 20,
                         child: VerticalDivider(),
                       ),
                       Expanded(
-                          flex: 1,
-                          child: Center(
-                            child: AppText(
-                              'Videos',
-                              size: 12,
-                              weight: FontWeight.w600,
-                              color: Color.fromRGBO(167, 172, 208, 1),
-                            ),
-                          )),
+                        flex: 1,
+                        child: Center(
+                          child: AppText(
+                            'Videos',
+                            size: 12,
+                            weight: FontWeight.w600,
+                            color: Color.fromRGBO(167, 172, 208, 1),
+                          ),
+                        ),
+                      ),
                     ]),
                     Divider(),
                   ],
                 ),
               ],
             ),
-        //     const Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        //       children: [
-        //         ProfileGrid(),
-        //         ProfileGrid(),
-        //         ProfileGrid(),
-        //       ],
-        //     ),
+            //     const Row(
+            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //       children: [
+            //         ProfileGrid(),
+            //         ProfileGrid(),
+            //         ProfileGrid(),
+            //       ],
+            //     ),
             // 5.hBox,
-        //      const Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        //       children: [
-        //         ProfileGrid(),
-        //         ProfileGrid(),
-        //         ProfileGrid(),
-        //       ],
-        //     ),
+            //      const Row(
+            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //       children: [
+            //         ProfileGrid(),
+            //         ProfileGrid(),
+            //         ProfileGrid(),
+            //       ],
+            //     ),
             // 5.hBox,
-        //      const Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        //       children: [
-        //         ProfileGrid(),
-        //         ProfileGrid(),
-        //         ProfileGrid(),
-        //       ],
-        //     ),
+            //      const Row(
+            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //       children: [
+            //         ProfileGrid(),
+            //         ProfileGrid(),
+            //         ProfileGrid(),
+            //       ],
+            //     ),
             // 10.hBox,
             GridView.builder(
                 // scrollDirection: Axis.vertical,
@@ -235,9 +237,7 @@ class HomePage extends StatelessWidget {
                   mainAxisSpacing: 8,
                 ),
                 itemCount: 12,
-                itemBuilder: (context, index) => ProfileGrid()
-           
-            )
+                itemBuilder: (context, index) => ProfileGrid())
           ],
         ),
       ),
